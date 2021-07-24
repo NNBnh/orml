@@ -79,8 +79,7 @@ No [indented code blocks](https://github.github.com/gfm/#indented-code-blocks).
 
 ### Autolinks
 
-ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) exactly like from [GFM](https://github.github.com/gfm)
-(**not the original [autolinks](https://github.github.com/gfm/#autolinks)**)
+ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) (**not the original [autolinks](https://github.github.com/gfm/#autolinks)**) exactly like from [GFM](https://github.github.com/gfm)
 
 ### Lists
 
@@ -92,6 +91,7 @@ and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.gith
 ### Tables
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
+- `:` => `=`
 - Foot.
 
 ### Codes
