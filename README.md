@@ -129,13 +129,13 @@ ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-ex
 ORML support [list items](https://github.github.com/gfm/#list-items)
 and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.github.com/gfm) but with the following difference:
 - A [bullet list marker](https://github.github.com/gfm/#bullet-list-marker) is a `-` character (and not a `+` nor a `*` character).
-- An [ordered list marker](https://github.github.com/gfm/#ordered-list-marker) is a sequence of 1–9 arabic digits (`0-9`), followed by a `.` character (and not followed by a `)` character).
+- An [ordered list marker](https://github.github.com/gfm/#ordered-list-marker) is a sequence of 1–9 arabic digits `0-9`, followed by a `.` character (and not followed by a `)` character).
 
 #### 2.3. 🗄️ Tables
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
-- `:` => `=`
-- Foot.
+- The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing equals sign `=` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
+- Footer. #TODO
 
 #### 2.4. 📟 Codes
 
@@ -171,6 +171,7 @@ and [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from
 Special thanks to:
 - [**PML (Practical Markup Language)**](https://www.pml-lang.dev) by [Christian Neumanns](https://www.pml-lang.dev/about/faq.html#creator)
 - [**HTML5 (HyperText Markup Language)**](https://en.wikipedia.org/wiki/HTML5) by [W3C](https://www.w3.org)
+- [**GitHub Flavored Markdown**](https://github.github.com/gfm) by [Github](https://github.com)
 
 <br><br><br><br>
 
