@@ -37,7 +37,7 @@
 
 ## 📙 Reference
 
-### 1. 📜 HTML power
+### 📜 1. HTML power
 
 ```html
 <tagname attribute="value" more-attribute="value">content</tagname>
@@ -55,11 +55,9 @@
 [tagname attribute="value" more-attribute="value"]
 ```
 
-| HTML Tag                                                       | Description               |
-| -------------------------------------------------------------- | ------------------------- |
-| [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp) | Defines the document type |
+No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 
-#### 1.1. 🏷️ Alternative tags
+#### 🏷️ 1.1. Alternative tags
 
 | HTML tags                                                                                        | ORML alternative tags          | Description                                                                        |
 | ------------------------------------------------------------------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------- |
@@ -96,14 +94,14 @@ Removed:
 | [`<var>...</var>`](https://www.w3schools.com/tags/tag_var.asp)                                   | `[V ...]`                      | Defines a variable                                                                 |
 -->
 
-#### 1.2. ⚠️ Strict tags
+#### ⚠️ 1.2. Strict tags
 
 | HTML tags                                                                                        | ORML strict tags | Description                  |
 | ------------------------------------------------------------------------------------------------ | ---------------- | ---------------------------- |
 | [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]`            | Defines a unchecked checkbox |
 | [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[X]`            | Defines a checked checkbox   |
 
-#### 1.3. ♾️ Extend tags
+#### ♾️ 1.3. Extend tags
 
 | HTML tags                          | ORML alternative tags              | Description            |
 | ---------------------------------- | ---------------------------------- | ---------------------- |
@@ -116,34 +114,34 @@ Removed:
 [Bibliography](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#bibliography),
 [Footnotes](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#section-footnotes)
 
-### 2. 📑 Markdown simplicity
+### 📑 2. Markdown simplicity
 
 No [indented code blocks](https://github.github.com/gfm/#indented-code-blocks).
 
-#### 2.1. 🔗 Autolinks
+#### 🔗 2.1. Autolinks
 
 ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) (**not the original [autolinks](https://github.github.com/gfm/#autolinks)**) exactly like from [GFM](https://github.github.com/gfm)
 
-#### 2.2. 📝 Lists
+#### 📟 2.2. Codes
+
+ORML support [code spans](https://github.github.com/gfm/#code-spans)
+and [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from [GFM](https://github.github.com/gfm) but with the following difference:
+- A code fence is a sequence of at least three consecutive `` ` `` characters (and not `~` characters)
+
+#### 📝 2.3. Lists
 
 ORML support [list items](https://github.github.com/gfm/#list-items)
 and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.github.com/gfm) but with the following difference:
 - A [bullet list marker](https://github.github.com/gfm/#bullet-list-marker) is a `-` character (and not a `+` nor a `*` character).
 - An [ordered list marker](https://github.github.com/gfm/#ordered-list-marker) is a sequence of 1–9 arabic digits `0-9`, followed by a `.` character (and not followed by a `)` character).
 
-#### 2.3. 🗄️ Tables
+#### 🗄️ 2.4. Tables
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
 - The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing equals sign `=` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
 - Footer. #TODO
 
-#### 2.4. 📟 Codes
-
-ORML support [code spans](https://github.github.com/gfm/#code-spans)
-and [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from [GFM](https://github.github.com/gfm) but with the following difference:
-- A code fence is a sequence of at least three consecutive `` ` `` characters (and not `~` characters)
-
-#### 2.5. 🔣 Backslash escapes
+#### 🔣 2.5. Backslash escapes
 
 | Escapes  | Charater | Name                  |
 | -------- | -------- | --------------------- |
@@ -172,6 +170,7 @@ Special thanks to:
 - [**PML (Practical Markup Language)**](https://www.pml-lang.dev) by [Christian Neumanns](https://www.pml-lang.dev/about/faq.html#creator)
 - [**HTML5 (HyperText Markup Language)**](https://en.wikipedia.org/wiki/HTML5) by [W3C](https://www.w3.org)
 - [**GitHub Flavored Markdown**](https://github.github.com/gfm) by [Github](https://github.com)
+- [**Pandoc**](https://pandoc.org) by [John MacFarlane](https://johnmacfarlane.net)
 
 <br><br><br><br>
 
