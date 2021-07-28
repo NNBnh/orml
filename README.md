@@ -84,7 +84,8 @@ No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 | HTML tags                          | ORML extend tags                   | Description            |
 | ---------------------------------- | ---------------------------------- | ---------------------- |
 | `<span class="spoiler">...</span>` | `[? ...]`                          | Defines a spoiler text |
-| #TODO                              | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media             |
+| #TODO                              | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media `#TODO`     |
+| `<div class="chapter">...</div>`   | `[= ...]`                          | PML's Chapter `#TODO`  |
 
 `#TODO`:
 [Document](https://www.pml-lang.dev/docs/reference_manual/index.html#node_doc),
@@ -96,7 +97,9 @@ No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 
 ### 📑 2. Markdown simplicity
 
-Because ORML doesn't support [indented code blocks](https://github.github.com/gfm/#indented-code-blocks) so every element (fenced code blocks, lists, tables, ...) can be indented freely (by it own rule) without become a code block.
+To make the language easier to read and write, ORML include many feature from [GFM](https://github.github.com/gfm)
+
+> *Because ORML doesn't support [indented code blocks](https://github.github.com/gfm/#indented-code-blocks) so every element (fenced code blocks, lists, tables, ...) can be indented freely (by it own rule) without become a code block.*
 
 #### 🔗 2.1. Autolinks
 
