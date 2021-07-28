@@ -18,14 +18,9 @@
 
 ### 📔 Story
 
-<!-- 
-> 1. [ ] Lazy markup language (LZML)
-> 2. [ ] Unoriginal markup language (UOML)
-> 3. [ ] _"Original"_ markup language (ORML)
-> 4. [x] Orange markup language (ORML)
--->
-
 ### ✨ Features
+
+<br>
 
 ## 🚀 Setup
 
@@ -34,6 +29,8 @@
 ### 📥 Installation
 
 ## ⌨️ Usage
+
+<br>
 
 ## 📙 Reference
 
@@ -75,25 +72,6 @@ No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 | [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)                                   | `[# ...]`                      | Defines a comment                                                                  |
 | [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)                              | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                                                |
 
-<!--
-Removed:
-
-| HTML tags                                                                                        | ORML alternative tags          | Description                                                                        |
-| ------------------------------------------------------------------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------- |
-| [`<h1>...</h1>` to `<h6>...</h6>`](https://www.w3schools.com/tags/tag_hn.asp)                    | `[= ...]` to `[====== ...]`    | Defines a headings (the number of `=` character to the header level is correspond) |
-| [`<div>...</div>`](https://www.w3schools.com/tags/tag_div.asp)                                   | `[/ ...]`                      | Defines a section in a document                                                    |
-|                                                                                                  |                                |                                                                                    |
-| [`<address>...</address>`](https://www.w3schools.com/tags/tag_address.asp)                       | `[@ ...]`                      | Defines contact information for the author/owner of a document/article             |
-| [`<abbr>...</abbr>`](https://www.w3schools.com/tags/tag_abbr.asp)                                | `[A ...]`                      | Defines an abbreviation or an acronym                                              |
-| [`<cite>...</cite>`](https://www.w3schools.com/tags/tag_cite.asp)                                | `[T ...]`                      | Defines the title of a work                                                        |
-| [`<code>...</code>`](https://www.w3schools.com/tags/tag_code.asp)                                | `[C ...]`                      | Defines a piece of computer code                                                   |
-| [`<dfn>...</dfn>`](https://www.w3schools.com/tags/tag_dfn.asp)                                   | `[D ...]`                      | Specifies a term that is going to be defined within the content                    |
-| [`<kbd>...</kbd>`](https://www.w3schools.com/tags/tag_kbd.asp)                                   | `[K ...]`                      | Defines keyboard input                                                             |
-| [`<blockquote>...</blockquote>`](https://www.w3schools.com/tags/tag_blockquote.asp)              | `[Q ...]`                      | Defines a section that is quoted from another source                               |
-| [`<samp>...</samp>`](https://www.w3schools.com/tags/tag_samp.asp)                                | `[S ...]`                      | Defines sample output from a computer program                                      |
-| [`<var>...</var>`](https://www.w3schools.com/tags/tag_var.asp)                                   | `[V ...]`                      | Defines a variable                                                                 |
--->
-
 #### ⚠️ 1.2. Strict tags
 
 | HTML tags                                                                                        | ORML strict tags | Description                  |
@@ -103,7 +81,7 @@ Removed:
 
 #### ♾️ 1.3. Extend tags
 
-| HTML tags                          | ORML alternative tags              | Description            |
+| HTML tags                          | ORML extend tags                   | Description            |
 | ---------------------------------- | ---------------------------------- | ---------------------- |
 | `<span class="spoiler">...</span>` | `[? ...]`                          | Defines a spoiler text |
 | #TODO                              | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media             |
@@ -113,6 +91,8 @@ Removed:
 [Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
 [Bibliography](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#bibliography),
 [Footnotes](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#section-footnotes)
+
+<br>
 
 ### 📑 2. Markdown simplicity
 
@@ -169,6 +149,8 @@ Except inside [code spans or fenced code blocks](#-22-codes), any punctuation or
 | `\\|`    | `\|`     | Vertical bar          |
 | `\-`     | `-`      | Hyphen/minus          |
 | `\=`     | `=`      | Equals sign           |
+
+<br>
 
 ## 💌 Credits
 Special thanks to:
