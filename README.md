@@ -108,7 +108,7 @@ Removed:
 | `<span class="spoiler">...</span>` | `[? ...]`                          | Defines a spoiler text |
 | #TODO                              | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media             |
 
-#TODO:
+`#TODO`:
 [Document](https://www.pml-lang.dev/docs/reference_manual/index.html#node_doc),
 [Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
 [Bibliography](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#bibliography),
@@ -116,17 +116,20 @@ Removed:
 
 ### 📑 2. Markdown simplicity
 
-No [indented code blocks](https://github.github.com/gfm/#indented-code-blocks).
+Because ORML doesn't support [indented code blocks](https://github.github.com/gfm/#indented-code-blocks) so every element (fenced code blocks, lists, tables, ...) can be indented freely (by it own rule) without become a code block.
 
 #### 🔗 2.1. Autolinks
 
-ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) (**not the original [autolinks](https://github.github.com/gfm/#autolinks)**) exactly like from [GFM](https://github.github.com/gfm)
+ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) (**not the original [autolinks](https://github.github.com/gfm/#autolinks)**) exactly like from [GFM](https://github.github.com/gfm).
 
 #### 📟 2.2. Codes
 
-ORML support [code spans](https://github.github.com/gfm/#code-spans)
-and [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from [GFM](https://github.github.com/gfm) but with the following difference:
-- A code fence is a sequence of at least three consecutive `` ` `` characters (and not `~` characters)
+ORML support [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from [GFM](https://github.github.com/gfm) but with the following difference:
+- A [code fence](https://github.github.com/gfm/#code-fence) is a sequence of at least three consecutive `` ` `` characters (and not `~` characters).
+- The line with the opening code fence may optionally contain some text that start with the `.` character following the code fence; this is trimmed of leading and trailing whitespace and called the [info string](https://github.github.com/gfm/#info-string) (and it may not contain any `` ` `` characters).
+
+ORML support [code spans](https://github.github.com/gfm/#code-spans) from [GFM](https://github.github.com/gfm) but with the following difference:
+- The closing backtick strings of a [code spans](https://github.github.com/gfm/#code-spans) may optionally contain some text that start with the `.` character that function like [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks)'s [info string](https://github.github.com/gfm/#info-string)
 
 #### 📝 2.3. Lists
 
@@ -139,9 +142,11 @@ and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.gith
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
 - The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing equals sign `=` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
-- Footer. #TODO
+- Footer. `#TODO`
 
 #### 🔣 2.5. Backslash escapes
+
+Except inside [code spans or fenced code blocks](#-22-codes), any punctuation or space character preceded by a backslash will be treated literally, even if it would normally indicate formatting.
 
 | Escapes  | Charater | Name                  |
 | -------- | -------- | --------------------- |
