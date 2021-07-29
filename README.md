@@ -36,7 +36,7 @@
 
 ### 📜 1. HTML power
 
-> *Check out the [HTML Element Reference](https://www.w3schools.com/tags/ref_byfunc.asp).*
+ORML is basically HTML under the hood. So every syntaxes, every elements, every rulesets of HTML will be applied to ORML but with some changes declared below.
 
 ####  1.1. 📏 Syntax
 
@@ -70,12 +70,13 @@ Examples:
 
 #### 🔥 1.2. Replaced/Removed tags
 
-`#TODO`
-No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
+The following tags have been removed or replaced:
 
-| HTML tags                                                      | ORML tags | Description       |
-| -------------------------------------------------------------- | --------- | ----------------- |
-| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp) | `[# ...]` | Defines a comment |
+| HTML tags                                                            | ORML tags | Description               |
+| -------------------------------------------------------------------- | --------- | ------------------------- |
+| [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp)       | _Remove_  | Defines the document type |
+| [`<html>...</html>`](https://www.w3schools.com/tags/tag_comment.asp) | _Remove_  | Defines an HTML document  |
+| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)       | `[# ...]` | Defines a comment         |
 
 #### 🏷️ 1.3. Alias tags
 
