@@ -17,8 +17,11 @@
 | `` `...` ``            | `` `...` ``            | `<pre>...</pre>`   | `[$ ...]` | `Monospace`              |
 
 ### 📔 Story
+- [**PML (Practical Markup Language)**](https://www.pml-lang.dev)
 
 ### ✨ Features
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [Markdown](https://github.github.com/gfm) and [AsciiDoc](https://asciidoctor.org)
 
 <br>
 
@@ -28,6 +31,8 @@
 
 ### 📥 Installation
 
+<br>
+
 ## ⌨️ Usage
 
 <br>
@@ -36,7 +41,7 @@
 
 ### 📜 1. HTML power
 
-ORML is basically HTML under the hood. So every syntaxes, every elements, every rulesets of HTML will be applied to ORML but with some changes declared below.
+ORML is basically HTML5 under the hood. So every syntaxes, every elements, every rulesets of HTML will be applied to ORML but with some changes declared below.
 
 ####  1.1. 📏 Syntax
 
@@ -183,6 +188,7 @@ Special thanks to:
 - [**PML (Practical Markup Language)**](https://www.pml-lang.dev) by [Christian Neumanns](https://www.pml-lang.dev/about/faq.html#creator)
 - [**HTML5 (HyperText Markup Language)**](https://en.wikipedia.org/wiki/HTML5) by [W3C](https://www.w3.org)
 - [**GitHub Flavored Markdown**](https://github.github.com/gfm) by [Github](https://github.com)
+- [**AsciiDoctor**](https://asciidoctor.org) by it's [many authors](https://asciidoctor.org/#authors) and [contributors](https://github.com/asciidoctor/asciidoctor/graphs/contributors)
 - [**Pandoc**](https://pandoc.org) by [John MacFarlane](https://johnmacfarlane.net)
 
 <br><br><br><br>
