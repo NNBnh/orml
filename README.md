@@ -36,41 +36,41 @@
 
 ### 📜 1. HTML power
 
-```html
-<tagname attribute="value" more-attribute="value">content</tagname>
-```
-
-```orml
-[tagname attribute="value" more-attribute="value" content]
-```
+An HTML element is defined by a start tag, some content, and an end tag.
+A tag open with a `<` character and end with a `>` character:
 
 ```html
 <tagname attribute="value" more-attribute="value">
+<tagname attribute="value" more-attribute="value">content</tagname>
 ```
+
+An ORML element is defined by a tag and optionally with some context in the end of a tag.
+A tag open with a `[` character and end with a `]` character:
 
 ```orml
 [tagname attribute="value" more-attribute="value"]
+[tagname attribute="value" more-attribute="value" content]
 ```
 
 No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 
-#### 🏷️ 1.1. Alternative tags
+#### 🏷️ 1.1. Alias tags
 
-| HTML tags                                                                                        | ORML alternative tags          | Description                                                                        |
-| ------------------------------------------------------------------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------- |
-| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                          | `[* ...]`                      | Defines important text                                                             |
-| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                      | `[_ ...]`                      | Defines emphasized text                                                            |
-| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                   | `[+ ...]`                      | Defines a text that has been inserted into a document                              |
-| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                   | `[- ...]`                      | Defines text that has been deleted from a document                                 |
-| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                                | `[% ...]`                      | Defines marked/highlighted text                                                    |
-| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                   | `[$ ...]`                      | Defines monospace text (preformatted text)                                         |
-| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                             | `[. ...]`                      | Defines smaller text                                                               |
-| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                   | `[, ...]`                      | Defines subscripted text                                                           |
-| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                   | `[^ ...]`                      | Defines superscripted text                                                         |
-| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                                | `[; ...]`                      | Defines a section in a document                                                    |
-| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                             | `[---]` (`[--- ...]`)          | Defines a thematic change in the content                                           |
-| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)                                   | `[# ...]`                      | Defines a comment                                                                  |
-| [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)                              | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                                                |
+| HTML tags                                                               | ORML alias tags                | Description                                           |
+| ----------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------- |
+| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp) | `[* ...]`                      | Defines important text                                |
+| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)             | `[_ ...]`                      | Defines emphasized text                               |
+| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)          | `[+ ...]`                      | Defines a text that has been inserted into a document |
+| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)          | `[- ...]`                      | Defines text that has been deleted from a document    |
+| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)       | `[% ...]`                      | Defines marked/highlighted text                       |
+| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)          | `[$ ...]`                      | Defines monospace text (preformatted text)            |
+| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)    | `[. ...]`                      | Defines smaller text                                  |
+| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)          | `[, ...]`                      | Defines subscripted text                              |
+| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)          | `[^ ...]`                      | Defines superscripted text                            |
+| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)       | `[; ...]`                      | Defines a section in a document                       |
+| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)    | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
+| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)          | `[# ...]`                      | Defines a comment                                     |
+| [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)     | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
 #### ⚠️ 1.2. Strict tags
 
@@ -97,7 +97,7 @@ No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 
 ### 📑 2. Markdown simplicity
 
-To make the language easier to read and write, ORML include many feature from [GFM](https://github.github.com/gfm)
+To make the language easier to read and write, ORML include many feature from [GFM](https://github.github.com/gfm).
 
 > *Because ORML doesn't support [indented code blocks](https://github.github.com/gfm/#indented-code-blocks) so every element (fenced code blocks, lists, tables, ...) can be indented freely (by it own rule) without become a code block.*
 
@@ -166,6 +166,6 @@ Special thanks to:
 
 ---
 
-> <h1 align="center">Fork with ❤️ by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
+> <h1 align="center">Made with ❤️ by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
 >
 > <p align="center"><a href="https://www.buymeacoffee.com/nnbnh"><img src="https://img.shields.io/badge/buy_me_a_coffee%20-%23F7CA88.svg?logo=buy-me-a-coffee&logoColor=333333&style=for-the-badge" alt="Buy Me a Coffee"></a></p>
