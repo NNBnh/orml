@@ -36,25 +36,48 @@
 
 ### 📜 1. HTML power
 
-An HTML element is defined by a start tag, some content, and an end tag.
-A tag open with a `<` character and end with a `>` character:
+> *Check out the [HTML Element Reference](https://www.w3schools.com/tags/ref_byfunc.asp).*
 
-```html
-<tagname attribute="value" more-attribute="value">
-<tagname attribute="value" more-attribute="value">content</tagname>
-```
+####  1.1. 📏 Syntax
 
-An ORML element is defined by a tag and optionally with some context in the end of a tag.
-A tag open with a `[` character and end with a `]` character:
+> An HTML element is defined by a start tag, some content , and an end tag (some time not require):
+> - A start tag open with a `<` character follow by the tag name and optionally with some attributes, then end with a `>` character. An end tag is the same but open with `</`.
+> - An attribute start with the attribute name follow by a `=` character then some value wrapped by `"`/`'` characters.
+>
+> Examples:
+>
+> ```html
+> <tagname>
+> <tagname>content</tagname>
+> <tagname attribute="value" more-attribute="value">
+> <tagname attribute="value" more-attribute="value">content</tagname>
+> ```
+
+An ORML element is defined by a tag with some context inside it:
+- A tag open with a `[` character follow by the tag name and optionally with some attributes and/or some context, then end with a `]` character.
+- An attribute start with the attribute name follow by a `=` character then some value wrapped by `"`/`'` characters or by a curly brackets (`{`, `}`).
+- An attribute can be [Svelte's dynamic attribute](https://svelte.dev/tutorial/dynamic-attributes) which start and end with an open and close curly brackets (`{`, `}`).
+- The tag's context must be at the end of the tag (right before the `]` character). If the context look like an attribute, you need to escape the `=` character (escape `{` or/and `}` if it look like a dynamic attribute).
+
+Examples:
 
 ```orml
+[tagname]
+[tagname content]
 [tagname attribute="value" more-attribute="value"]
 [tagname attribute="value" more-attribute="value" content]
 ```
 
+#### 🔥 1.2. Replaced/Removed tags
+
+`#TODO`
 No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 
-#### 🏷️ 1.1. Alias tags
+| HTML tags                                                      | ORML tags | Description       |
+| -------------------------------------------------------------- | --------- | ----------------- |
+| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp) | `[# ...]` | Defines a comment |
+
+#### 🏷️ 1.3. Alias tags
 
 | HTML tags                                                               | ORML alias tags                | Description                                           |
 | ----------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------- |
@@ -69,22 +92,21 @@ No [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp).
 | [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)          | `[^ ...]`                      | Defines superscripted text                            |
 | [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)       | `[; ...]`                      | Defines a section in a document                       |
 | [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)    | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
-| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)          | `[# ...]`                      | Defines a comment                                     |
 | [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)     | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
-#### ⚠️ 1.2. Strict tags
+#### ⚠️ 1.4. Strict tags
 
 | HTML tags                                                                                        | ORML strict tags | Description                  |
 | ------------------------------------------------------------------------------------------------ | ---------------- | ---------------------------- |
 | [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]`            | Defines a unchecked checkbox |
 | [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[X]`            | Defines a checked checkbox   |
 
-#### ♾️ 1.3. Extend tags
+#### ♾️ 1.5. Extend tags
 
 | HTML tags                          | ORML extend tags                   | Description            |
 | ---------------------------------- | ---------------------------------- | ---------------------- |
 | `<span class="spoiler">...</span>` | `[? ...]`                          | Defines a spoiler text |
-| #TODO                              | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media `#TODO`     |
+|                                    | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media `#TODO`     |
 | `<div class="chapter">...</div>`   | `[= ...]`                          | PML's Chapter `#TODO`  |
 
 `#TODO`:
