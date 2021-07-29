@@ -5,6 +5,10 @@
 
 ## 💡 About
 
+```orml
+Hello, World!
+```
+
 | Markdown               | AsciiDoc               | HTML               | ORML      | Style                    |
 | ---------------------- | ---------------------- | ------------------ | --------- | ------------------------ |
 | `**...**` or `__...__` | `*...*`                | `<b>...</b>`       | `[b ...]` | **Bold**                 |
@@ -17,11 +21,13 @@
 | `` `...` ``            | `` `...` ``            | `<pre>...</pre>`   | `[$ ...]` | `Monospace`              |
 
 ### 📔 Story
-- [**PML (Practical Markup Language)**](https://www.pml-lang.dev)
+[PML (Practical Markup Language)](https://www.pml-lang.dev)
 
 ### ✨ Features
-- [HTML](https://en.wikipedia.org/wiki/HTML5)
-- [Markdown](https://github.github.com/gfm) and [AsciiDoc](https://asciidoctor.org)
+- Beautiful syntax inspired by [PML](https://www.pml-lang.dev)
+- With the power of [HTML](https://en.wikipedia.org/wiki/HTML5)
+- Easy to read and write as [Markdown](https://github.github.com/gfm)
+- Included many productivity features like [AsciiDoc](https://asciidoctor.org)
 
 <br>
 
@@ -41,7 +47,7 @@
 
 ### 📜 1. HTML power
 
-ORML is basically HTML5 under the hood. So every syntaxes, every elements, every rulesets of HTML will be applied to ORML but with some changes declared below.
+ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets of HTML will be applied to ORML but with changes declared below.
 
 ####  1.1. 📏 Syntax
 
@@ -75,7 +81,7 @@ Examples:
 
 #### 🔥 1.2. Replaced/Removed tags
 
-The following tags have been removed or replaced:
+The following HTML tags have been removed or replaced on ORML:
 
 | HTML tags                                                            | ORML tags | Description               |
 | -------------------------------------------------------------------- | --------- | ------------------------- |
@@ -100,6 +106,9 @@ The following tags have been removed or replaced:
 | [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)    | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
 | [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)     | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
+> *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
+> *And if the link is also a cross reference, it will remove the first `#` character.*
+
 #### ⚠️ 1.4. Strict tags
 
 | HTML tags                                                                                        | ORML strict tags | Description                  |
@@ -109,16 +118,15 @@ The following tags have been removed or replaced:
 
 #### ♾️ 1.5. Extend tags
 
-| HTML tags                          | ORML extend tags                   | Description            |
-| ---------------------------------- | ---------------------------------- | ---------------------- |
-| `<span class="spoiler">...</span>` | `[? ...]`                          | Defines a spoiler text |
-|                                    | `[! "URL" ...]` or `[! 'URL' ...]` | Auto media `#TODO`     |
-| `<div class="chapter">...</div>`   | `[= ...]`                          | PML's Chapter `#TODO`  |
+| HTML tags                          | ORML extend tags                 | Description            |
+| ---------------------------------- | -------------------------------- | ---------------------- |
+| `<span class="spoiler">...</span>` | `[? ...]`                        | Defines a spoiler text |
+|                                    | `[!"URL" ...]` or `[!'URL' ...]` | Auto media `#TODO`     |
+|                                    | `[="HEADER" ...]`                | Chapter `#TODO`        |
+|                                    | `[: ...]`                        | Footnotes `#TODO`      |
 
 `#TODO`:
-[Document](https://www.pml-lang.dev/docs/reference_manual/index.html#node_doc),
 [Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
-[Bibliography](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#bibliography),
 [Footnotes](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#section-footnotes)
 
 <br>
