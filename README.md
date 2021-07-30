@@ -27,7 +27,6 @@ Hello, World!
 - Beautiful syntax inspired by [PML](https://www.pml-lang.dev)
 - With the power of [HTML](https://en.wikipedia.org/wiki/HTML5)
 - Easy to read and write as [Markdown](https://github.github.com/gfm)
-- Included many productivity features like [AsciiDoc](https://asciidoctor.org)
 
 <br>
 
@@ -91,43 +90,36 @@ The following HTML tags have been removed or replaced on ORML:
 
 #### 🏷️ 1.3. Alias tags
 
-| HTML tags                                                                                      | ORML alias tags                | Description                                           |
-| ---------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------- |
-| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                        | `[* ...]`                      | Defines important text                                |
-| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                    | `[_ ...]`                      | Defines emphasized text                               |
-| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                 | `[+ ...]`                      | Defines a text that has been inserted into a document |
-| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                 | `[- ...]`                      | Defines text that has been deleted from a document    |
-| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                              | `[% ...]`                      | Defines marked/highlighted text                       |
-| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                 | `[$ ...]`                      | Defines monospace text (preformatted text)            |
-| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                           | `[. ...]`                      | Defines smaller text                                  |
-| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                 | `[, ...]`                      | Defines subscripted text                              |
-| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                 | `[^ ...]`                      | Defines superscripted text                            |
-| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                              | `[; ...]`                      | Defines a section in a document                       |
-| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                           | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
-| [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp) | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
+| HTML tags                                                                                        | ORML alias tags                | Description                                           |
+| ------------------------------------------------------------------------------------------------ | ------------------------------ | ----------------------------------------------------- |
+| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                          | `[* ...]`                      | Defines important text                                |
+| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                      | `[_ ...]`                      | Defines emphasized text                               |
+| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                   | `[+ ...]`                      | Defines a text that has been inserted into a document |
+| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                   | `[- ...]`                      | Defines text that has been deleted from a document    |
+| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                                | `[% ...]`                      | Defines marked/highlighted text                       |
+| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                   | `[$ ...]`                      | Defines monospace text (preformatted text)            |
+| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                             | `[. ...]`                      | Defines smaller text                                  |
+| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                   | `[, ...]`                      | Defines subscripted text                              |
+| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                   | `[^ ...]`                      | Defines superscripted text                            |
+| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                             | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
+| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                                | `[; ...]`                      | Defines a section in a document                       |
+| [`<span class="spoiler">...</span>`](https://www.w3schools.com/tags/tag_span.asp)                | `[? ...]`                      | Defines a spoiler text                                |
+| [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]` <sub>strict</sub>        | Defines a unchecked checkbox                          |
+| [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[/]` <sub>strict</sub>        | Defines a checked checkbox                            |
+| [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp)   | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
 > *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
 > *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by by a square brackets (`[`, `]`).*
 
-#### ⚠️ 1.4. Strict tags
+#### ♾️ 1.4. Extend tags
 
-| HTML tags                                                                                        | ORML strict tags | Description                  |
-| ------------------------------------------------------------------------------------------------ | ---------------- | ---------------------------- |
-| [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]`            | Defines a unchecked checkbox |
-| [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[X]`            | Defines a checked checkbox   |
-
-#### ♾️ 1.5. Extend tags
-
-| HTML tags                          | ORML extend tags                 | Description            |
-| ---------------------------------- | -------------------------------- | ---------------------- |
-| `<span class="spoiler">...</span>` | `[? ...]`                        | Defines a spoiler text |
-|                                    | `[!"URL" ...]` or `[!'URL' ...]` | Auto media `#TODO`     |
-|                                    | `[="HEADER" ...]`                | Chapter `#TODO`        |
-|                                    | `[: ...]`                        | Footnotes `#TODO`      |
+| ORML extend tags                 | Description |
+| -------------------------------- | ----------- |
+| `[="HEADER" ...]`                | Chapter     |
+| `[!"URL" ...]` or `[!'URL' ...]` | Auto media  |
 
 `#TODO`:
-[Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
-[Footnotes](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#section-footnotes)
+[Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch)
 
 <br>
 
@@ -266,7 +258,6 @@ Special thanks to:
 - [**PML (Practical Markup Language)**](https://www.pml-lang.dev) by [Christian Neumanns](https://www.pml-lang.dev/about/faq.html#creator)
 - [**HTML5 (HyperText Markup Language)**](https://en.wikipedia.org/wiki/HTML5) by [W3C](https://www.w3.org)
 - [**GitHub Flavored Markdown**](https://github.github.com/gfm) by [Github](https://github.com)
-- [**AsciiDoctor**](https://asciidoctor.org) by it's [many authors](https://asciidoctor.org/#authors) and [contributors](https://github.com/asciidoctor/asciidoctor/graphs/contributors)
 - [**Pandoc**](https://pandoc.org) by [John MacFarlane](https://johnmacfarlane.net)
 
 <br><br><br><br>
