@@ -60,7 +60,7 @@ ORML:
 
 > These tags are very use-case specific therefore readability more appreciated.
 
-## More GFM feature
+## More productivity features
 
 [Thematic breaks](https://github.github.com/gfm/#thematic-breaks)
 
@@ -72,4 +72,10 @@ ORML:
 
 [Block quotes](https://github.github.com/gfm/#block-quotes)
 
-> Although this feature (`>`) is a little easier to type that the `[blockquote ...]` tag, it's make the syntax more complex.
+> Become redundant by the quote tables
+
+[Footnotes](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#section-footnotes)
+
+> Although this feature (`[: ...]`) is a little easier to type that the `["URL" ...]` tag, it's make the syntax more complex.
+>
+> Same with [bibliography](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#bibliography).
