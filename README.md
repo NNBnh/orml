@@ -91,20 +91,20 @@ The following HTML tags have been removed or replaced on ORML:
 
 #### 🏷️ 1.3. Alias tags
 
-| HTML tags                                                               | ORML alias tags                | Description                                           |
-| ----------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------- |
-| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp) | `[* ...]`                      | Defines important text                                |
-| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)             | `[_ ...]`                      | Defines emphasized text                               |
-| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)          | `[+ ...]`                      | Defines a text that has been inserted into a document |
-| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)          | `[- ...]`                      | Defines text that has been deleted from a document    |
-| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)       | `[% ...]`                      | Defines marked/highlighted text                       |
-| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)          | `[$ ...]`                      | Defines monospace text (preformatted text)            |
-| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)    | `[. ...]`                      | Defines smaller text                                  |
-| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)          | `[, ...]`                      | Defines subscripted text                              |
-| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)          | `[^ ...]`                      | Defines superscripted text                            |
-| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)       | `[; ...]`                      | Defines a section in a document                       |
-| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)    | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
-| [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)     | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
+| HTML tags                                                                                      | ORML alias tags                | Description                                           |
+| ---------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------- |
+| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                        | `[* ...]`                      | Defines important text                                |
+| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                    | `[_ ...]`                      | Defines emphasized text                               |
+| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                 | `[+ ...]`                      | Defines a text that has been inserted into a document |
+| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                 | `[- ...]`                      | Defines text that has been deleted from a document    |
+| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                              | `[% ...]`                      | Defines marked/highlighted text                       |
+| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                 | `[$ ...]`                      | Defines monospace text (preformatted text)            |
+| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                           | `[. ...]`                      | Defines smaller text                                  |
+| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                 | `[, ...]`                      | Defines subscripted text                              |
+| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                 | `[^ ...]`                      | Defines superscripted text                            |
+| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                              | `[; ...]`                      | Defines a section in a document                       |
+| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                           | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
+| [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp) | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
 > *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
 > *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by by a square brackets (`[`, `]`).*
