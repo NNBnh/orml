@@ -109,7 +109,7 @@ The following HTML tags have been removed or replaced on ORML:
 | [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp)   | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
 > *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
-> *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by by a square brackets (`[`, `]`).*
+> *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by a square brackets (`[`, `]`).*
 
 #### ♾️ 1.4. Extend tags
 
