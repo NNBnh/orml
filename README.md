@@ -67,8 +67,8 @@ ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets
 An ORML element is defined by a tag with some context inside it:
 - A tag open with a `[` character follow by the tag name and optionally with some attributes and/or some context, then end with a `]` character.
 - An attribute start with the attribute name follow by a `=` character then some value wrapped by `"`/`'` characters or by a curly brackets (`{`, `}`).
-- An attribute can be [Svelte's dynamic attribute](https://svelte.dev/tutorial/dynamic-attributes) which start and end with an open and close curly brackets (`{`, `}`).
-- The tag's context must be at the end of the tag (right before the `]` character). If the context look like an attribute, you need to escape the `=` character (escape `{` or/and `}` if it look like a dynamic attribute).
+- The tag's context must be at the end of the tag (right before the `]` character). If the context look like an attribute, you need to escape the `=` character <!-- (escape `{` or/and `}` if it look like a dynamic attribute) -->.
+<!-- - An attribute can be [Svelte's dynamic attribute](https://svelte.dev/tutorial/dynamic-attributes) which start and end with an open and close curly brackets (`{`, `}`). -->
 
 Examples:
 
@@ -107,7 +107,7 @@ The following HTML tags have been removed or replaced on ORML:
 | [`<a href="URL">...</a>`](https://www.w3schools.com/tags/tag_a.asp)     | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
 
 > *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
-> *And if it's also a cross reference, it will remove the first `#` character of the content.*
+> *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by by a square brackets (`[`, `]`).*
 
 #### ⚠️ 1.4. Strict tags
 
@@ -141,14 +141,56 @@ To make the language easier to read and write, ORML include many feature from [G
 
 ORML support [autolinks (extension)](https://github.github.com/gfm/#autolinks-extension-) (**not the original [autolinks](https://github.github.com/gfm/#autolinks)**) exactly like from [GFM](https://github.github.com/gfm).
 
+Examples:
+
+```orml
+You can just type https://github.com/NNBnh and it will turn in to a link.
+```
+
+<table><body><tr><td>
+
+You can just type https://github.com/NNBnh and it will turn in to a link.
+
+</td></tr></body></table>
+
 #### 📟 2.2. Codes
 
 ORML support [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks) from [GFM](https://github.github.com/gfm) but with the following difference:
 - A [code fence](https://github.github.com/gfm/#code-fence) is a sequence of at least three consecutive `` ` `` characters (and not `~` characters).
-- The line with the opening code fence may optionally contain some text that start with the `.` character following the code fence; this is trimmed of leading and trailing whitespace and called the [info string](https://github.github.com/gfm/#info-string) (and it may not contain any `` ` `` characters).
+- The line with the closing code fence may optionally contain some text that start with the `.` character following the code fence; this is trimmed of leading and trailing whitespace and called the [info string](https://github.github.com/gfm/#info-string) (and it may not contain any `` ` `` characters).
 
 ORML support [code spans](https://github.github.com/gfm/#code-spans) from [GFM](https://github.github.com/gfm) but with the following difference:
 - The closing backtick strings of a [code spans](https://github.github.com/gfm/#code-spans) may optionally contain some text that start with the `.` character that function like [fenced code blocks](https://github.github.com/gfm/#fenced-code-blocks)'s [info string](https://github.github.com/gfm/#info-string)
+
+Examples:
+
+`````orml
+This is a code span: `print("Hello, World!")`.python
+
+This is a code block:
+
+```
+string = "y"
+
+while True:
+    print(string)
+```.python
+`````
+
+<table><body><tr><td>
+
+This is a code span: `print("Hello, World!")`
+
+This is a code block:
+
+```python
+string = "y"
+
+while True:
+    print(string)
+```
+
+</td></tr></body></table>
 
 #### 📝 2.3. Lists
 
@@ -156,6 +198,34 @@ ORML support [list items](https://github.github.com/gfm/#list-items)
 and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.github.com/gfm) but with the following difference:
 - A [bullet list marker](https://github.github.com/gfm/#bullet-list-marker) is a `-` character (and not a `+` nor a `*` character).
 - An [ordered list marker](https://github.github.com/gfm/#ordered-list-marker) is a sequence of 1–9 arabic digits `0-9`, followed by a `.` character (and not followed by a `)` character).
+
+Examples:
+
+```orml
+Unordered list items:
+- Start with a `-` character:
+  - Not with `+`.
+  - Nor with `*`.
+- Very simple
+
+Ordered list items:
+1. Make every entry clarify
+2. Look professional
+```
+
+<table><body><tr><td>
+
+Unordered list items:
+- Start with a `-` character:
+  - Not with `+`.
+  - Nor with `*`.
+- Very simple
+
+Ordered list items:
+1. Make every entry clarify
+2. Look professional
+
+</td></tr></body></table>
 
 #### 🗄️ 2.4. Tables
 
