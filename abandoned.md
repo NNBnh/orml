@@ -47,16 +47,17 @@ ORML:
 
 | HTML tags                                                                           | ORML alternative tags  | Description                                                            |
 | ----------------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------- |
-| [`<div>...</div>`](https://www.w3schools.com/tags/tag_div.asp)                      | `[/ ...]`              | Defines a section in a document                                        |
+| [`<div>...</div>`](https://www.w3schools.com/tags/tag_div.asp)                      | `[/ ...]`              | Defines section in a document                                          |
 | [`<address>...</address>`](https://www.w3schools.com/tags/tag_address.asp)          | `[@ ...]`              | Defines contact information for the author/owner of a document/article |
-| [`<abbr>...</abbr>`](https://www.w3schools.com/tags/tag_abbr.asp)                   | `[A ...]`              | Defines an abbreviation or an acronym                                  |
+| [`<abbr>...</abbr>`](https://www.w3schools.com/tags/tag_abbr.asp)                   | `[A ...]`              | Defines abbreviation or an acronym                                     |
 | [`<cite>...</cite>`](https://www.w3schools.com/tags/tag_cite.asp)                   | `[T ...]`              | Defines the title of a work                                            |
-| [`<code>...</code>`](https://www.w3schools.com/tags/tag_code.asp)                   | `[C ...]` or `[$ ...]` | Defines a piece of computer code                                       |
+| [`<code>...</code>`](https://www.w3schools.com/tags/tag_code.asp)                   | `[C ...]` or `[$ ...]` | Defines piece of computer code                                         |
 | [`<dfn>...</dfn>`](https://www.w3schools.com/tags/tag_dfn.asp)                      | `[D ...]`              | Specifies a term that is going to be defined within the content        |
 | [`<kbd>...</kbd>`](https://www.w3schools.com/tags/tag_kbd.asp)                      | `[K ...]`              | Defines keyboard input                                                 |
-| [`<blockquote>...</blockquote>`](https://www.w3schools.com/tags/tag_blockquote.asp) | `[Q ...]` or `[> ...]` | Defines a section that is quoted from another source                   |
+| [`<blockquote>...</blockquote>`](https://www.w3schools.com/tags/tag_blockquote.asp) | `[Q ...]` or `[> ...]` | Defines section that is quoted from another source                     |
 | [`<samp>...</samp>`](https://www.w3schools.com/tags/tag_samp.asp)                   | `[S ...]`              | Defines sample output from a computer program                          |
-| [`<var>...</var>`](https://www.w3schools.com/tags/tag_var.asp)                      | `[V ...]`              | Defines a variable                                                     |
+| [`<var>...</var>`](https://www.w3schools.com/tags/tag_var.asp)                      | `[V ...]`              | Defines variable                                                       |
+| [`<!--OLD_TEXT-->...`](https://www.w3schools.com/tags/tag_comment.asp)              | `[~"OLD_TEXT" ...]`    | Defines text that has been changed in a document                       |
 
 > These tags are very use-case specific therefore readability more appreciated.
 
