@@ -44,6 +44,10 @@ Hello, World!
 
 ## 📙 Reference
 
+This document attempts to specify Orange markup language syntax.
+
+> *Orange markup language will often be referred to as ORML in this document.
+
 ### 📜 1. HTML power
 
 ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets of HTML will be applied to ORML but with changes declared below.
@@ -90,36 +94,38 @@ The following HTML tags have been removed or replaced on ORML:
 
 #### 🏷️ 1.3. Alias tags
 
-| HTML tags                                                                                        | ORML alias tags                | Description                                           |
-| ------------------------------------------------------------------------------------------------ | ------------------------------ | ----------------------------------------------------- |
-| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                          | `[* ...]`                      | Defines important text                                |
-| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                      | `[_ ...]`                      | Defines emphasized text                               |
-| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                   | `[+ ...]`                      | Defines a text that has been inserted into a document |
-| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                   | `[- ...]`                      | Defines text that has been deleted from a document    |
-| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                                | `[% ...]`                      | Defines marked/highlighted text                       |
-| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                   | `[$ ...]`                      | Defines monospace text (preformatted text)            |
-| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                             | `[. ...]`                      | Defines smaller text                                  |
-| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                   | `[, ...]`                      | Defines subscripted text                              |
-| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                   | `[^ ...]`                      | Defines superscripted text                            |
-| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                             | `[---]` (`[--- ...]`)          | Defines a thematic change in the content              |
-| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                                | `[; ...]`                      | Defines a section in a document                       |
-| [`<span class="spoiler">...</span>`](https://www.w3schools.com/tags/tag_span.asp)                | `[? ...]`                      | Defines a spoiler text                                |
-| [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]` <sub>strict</sub>        | Defines a unchecked checkbox                          |
-| [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[/]` <sub>strict</sub>        | Defines a checked checkbox                            |
-| [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp)   | `["URL" ...]` or `['URL' ...]` | Defines a hyperlink                                   |
+To make ORML more readable, the following HTML tags have aliases (and it's the prefer way to write those tags):
 
-> *If the hyperlink alias tag doesn't have any content, it will use the URL as content.*<br>
-> *And if it's also a cross reference, it will remove the first `#` character of the content and wrapped by a square brackets (`[`, `]`).*
+> **NOTE:** Some of the aliases are strict, meaning that you have to write it in exactly that specific way.
 
-#### ♾️ 1.4. Extend tags
+| HTML tags                                                                                        | ORML alias tags                | Description                                         |
+| ------------------------------------------------------------------------------------------------ | ------------------------------ | --------------------------------------------------- |
+| [`<strong>...</strong>`](https://www.w3schools.com/tags/tag_strong.asp)                          | `[* ...]`                      | Defines important text                              |
+| [`<em>...</em>`](https://www.w3schools.com/tags/tag_em.asp)                                      | `[_ ...]`                      | Defines emphasized text                             |
+| [`<ins>...</ins>`](https://www.w3schools.com/tags/tag_ins.asp)                                   | `[+ ...]`                      | Defines text that has been inserted into a document |
+| [`<del>...</del>`](https://www.w3schools.com/tags/tag_del.asp)                                   | `[- ...]`                      | Defines text that has been deleted from a document  |
+| [`<mark>...</mark>`](https://www.w3schools.com/tags/tag_mark.asp)                                | `[% ...]`                      | Defines marked/highlighted text                     |
+| [`<pre>...</pre>`](https://www.w3schools.com/tags/tag_pre.asp)                                   | `[$ ...]`                      | Defines monospace text (preformatted text)          |
+| [`<small>...</small>`](https://www.w3schools.com/tags/tag_small.asp)                             | `[. ...]`                      | Defines smaller text                                |
+| [`<sub>...</sub>`](https://www.w3schools.com/tags/tag_sub.asp)                                   | `[, ...]`                      | Defines subscripted text                            |
+| [`<sup>...</sup>`](https://www.w3schools.com/tags/tag_sup.asp)                                   | `[^ ...]`                      | Defines superscripted text                          |
+| [`<hr>` (`<hr>...</hr>`)](https://www.w3schools.com/tags/tag_hr.asp)                             | `[---]` (`[--- ...]`)          | Defines thematic change in the content              |
+| [`<span>...</span>`](https://www.w3schools.com/tags/tag_span.asp)                                | `[; ...]`                      | Defines section in a document                       |
+| [`<span class="spoiler">...</span>`](https://www.w3schools.com/tags/tag_span.asp)                | `[? ...]`                      | Defines spoiler text                                |
+| [`<input type="checkbox" disabled="">`](https://www.w3schools.com/tags/tag_input.asp)            | `[ ]` <sub>strict</sub>        | Defines unchecked checkbox                          |
+| [`<input type="checkbox" disabled="" checked="">`](https://www.w3schools.com/tags/tag_input.asp) | `[@]` <sub>strict</sub>        | Defines checked checkbox                            |
+| [`<a href="URL">...</a>` or `<a href='URL'>...</a>`](https://www.w3schools.com/tags/tag_a.asp)   | `["URL" ...]` or `['URL' ...]` | Defines hyperlink                                   |
 
-| ORML extend tags                 | Description |
-| -------------------------------- | ----------- |
-| `[="HEADER" ...]`                | Chapter     |
-| `[!"URL" ...]` or `[!'URL' ...]` | Auto media  |
+> *If the hyperlink alias tag doesn't have any content, it will use the URL as content:*<br>
+> - *If it's also a cross reference, it will remove the first `#` character of the content and wrapped by a square brackets (`[`, `]`).*
+> - *If it's also a email address (start with `mailto:`), it will trim `mailto:` and the following whitespaces at the beginning of the content.*
+
+#### 📚 1.4. Chapter tags
 
 `#TODO`:
 [Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch)
+
+`[="HEADER" ...]`
 
 <br>
 
