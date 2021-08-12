@@ -3,8 +3,6 @@
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/282/tangerine_1f34a.png"></p>
 <p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=F49104&color=F49104&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23F49104.svg?labelColor=F49104&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
 
-`#TODO` https://www.pml-lang.dev/docs/reference_manual/index.html#node_insert_code
-
 ## 💡 About
 
 <pre><code class="language-orml">Orange markup language is a extremely "original" markup language,
@@ -21,12 +19,15 @@ design to replace both <a href="https://github.github.com/gfm">Markdown</a> and 
   to it's syntax, I just miss the simple Markdown way.
 
   This motivates me to create a new markup language but with a different
-  approac: by using HTML as the core, 
+  approac: by using HTML as the core, change the syntax to PML, add some
+  features from Markdown, and we have Orange markup language!
 ]
 
 [="✨ Features"
   - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> plus:
-    - Beautiful syntax inspired by <a href="https://www.pml-lang.dev">PML</a>.
+    - <a href="#-11-syntax">Beautiful syntax</a> inspired by <a href="https://www.pml-lang.dev">PML</a>.
+    - <a href="#%EF%B8%8F-13-alias-tags">Tag's aliases</a>.
+    - Can be integrated with web framework (WIP).
   - Come with many <a href="https://github.github.com/gfm">Markdown</a>'s convenient features:
     - <a href="#-22-codes">Code spans</a>.
     - <a href="#-23-lists">Simple lists</a>.
@@ -70,7 +71,7 @@ This document attempts to specify Orange markup language syntax.
 
 ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets of HTML will be applied to ORML but with changes declared below.
 
-####  1.1. 📏 Syntax
+####  📏 1.1. Syntax
 
 > An HTML element is defined by a start tag, some content , and an end tag (some time not require):
 > - A start tag open with a `<` character follow by the tag name and optionally with some attributes, then end with a `>` character. An end tag is the same but open with `</`.
