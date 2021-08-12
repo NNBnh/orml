@@ -1,13 +1,24 @@
 <h1 align="center">Orange markup language</h1>
-<p align="center">A powerful and simple markup language</p>
+<p align="center">A simple and powerful markup language</p>
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/282/tangerine_1f34a.png"></p>
 <p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=F49104&color=F49104&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23F49104.svg?labelColor=F49104&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
 
 ## 💡 About
 
-```orml
-Hello, World!
-```
+<pre><code class="language-orml">Hello, World!
+
+[=<span>"📔 Story"</span>
+  <a href="https://www.pml-lang.dev">PML (Practical Markup Language)</a>
+]
+
+[=<span>"✨ Features"</span>
+  - Beautiful syntax inspired by <a href="https://www.pml-lang.dev">PML</a>.
+  - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
+  - Easy to read and write as <a href="https://github.github.com/gfm">Markdown</a>.
+]
+</code></pre>
+
+Here are some comparison:
 
 | Markdown               | AsciiDoc               | HTML               | ORML      | Style                    |
 | ---------------------- | ---------------------- | ------------------ | --------- | ------------------------ |
@@ -19,14 +30,6 @@ Hello, World!
 | `<sub>...</sub>`       | `~...~`                | `<sub>...</sub>`   | `[, ...]` | <sub>subscripted</sub>   |
 | `<sup>...</sup>`       | `^...^`                | `<sup>...</sup>`   | `[^ ...]` | <sup>superscripted</sup> |
 | `` `...` ``            | `` `...` ``            | `<pre>...</pre>`   | `[$ ...]` | `Monospace`              |
-
-### 📔 Story
-[PML (Practical Markup Language)](https://www.pml-lang.dev)
-
-### ✨ Features
-- Beautiful syntax inspired by [PML](https://www.pml-lang.dev)
-- With the raw power of [HTML](https://en.wikipedia.org/wiki/HTML5)
-- Easy to read and write as [Markdown](https://github.github.com/gfm)
 
 <br>
 
