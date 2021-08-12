@@ -5,18 +5,24 @@
 
 ## 💡 About
 
-<pre><code class="language-orml">Hello, World!
+<pre><code class="language-orml">Orange markup language is a extremely "original" markup language.
+It's use <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> as it's core, design to replace both <a href="https://github.github.com/gfm">Markdown</a> and <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
 
-[=<span>"📔 Story"</span>
-  <a href="https://www.pml-lang.dev">PML (Practical Markup Language)</a>
+[="📔 Story"
+  After looking for some alternative to <a href="https://github.github.com/gfm">Markdown</a>,
+  I discover <a href="https://www.pml-lang.dev">PML (Practical Markup Language)</a>
+  and IMO it's the best designed markup language so far.
+
+  But I found it's a bit waste opportunity to have such
+  a beautiful syntax that can directly harvest the raw power
+  of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> but chose not to do so.
 ]
 
-[=<span>"✨ Features"</span>
+[="✨ Features"
   - Beautiful syntax inspired by <a href="https://www.pml-lang.dev">PML</a>.
   - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
   - Easy to read and write as <a href="https://github.github.com/gfm">Markdown</a>.
-]
-</code></pre>
+]</code></pre>
 
 Here are some comparison:
 
@@ -128,7 +134,7 @@ To make ORML more readable, the following HTML tags have aliases (and it's the p
 Tag: `[="HEADER" ...]`
 
 Inspired by [PML's Chapter node](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
-chapter tag is an alias for the [HTML's <section> tag](https://www.w3schools.com/TAgs/tag_section.asp) with a definedable header:
+chapter tag is an alias for the [HTML's `<section>` tag](https://www.w3schools.com/TAgs/tag_section.asp) with a definedable header:
 - The header level will automatically be assigned by how many chapter tag is the current one in plus one.
 - If there is a chapter tag inside more than 5 chapter tags, it's will be header level will alway be 6.
 - Header can include any inline elements like [tags](#11--syntax), [autolinks](#-21-autolinks), [code spans](#-22-codes)...
