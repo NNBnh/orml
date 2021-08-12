@@ -86,11 +86,11 @@ Examples:
 
 The following HTML tags have been removed or replaced on ORML:
 
-| HTML tags                                                            | ORML tags | Description               |
-| -------------------------------------------------------------------- | --------- | ------------------------- |
-| [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp)       | _Remove_  | Defines the document type |
-| [`<html>...</html>`](https://www.w3schools.com/tags/tag_comment.asp) | _Remove_  | Defines an HTML document  |
-| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)       | `[# ...]` | Defines a comment         |
+| HTML tags                                                         | ORML tags | Description               |
+| ----------------------------------------------------------------- | --------- | ------------------------- |
+| [`<!DOCTYPE>`](https://www.w3schools.com/tags/tag_doctype.asp)    | _Remove_  | Defines the document type |
+| [`<html>...</html>`](https://www.w3schools.com/tags/tag_html.asp) | _Remove_  | Defines an HTML document  |
+| [`<!--...-->`](https://www.w3schools.com/tags/tag_comment.asp)    | `[# ...]` | Defines a comment         |
 
 #### 🏷️ 1.3. Alias tags
 
@@ -126,8 +126,9 @@ Tag: `[="HEADER" ...]`
 
 Inspired by [PML's Chapter node](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
 chapter tag is an alias for the [HTML's <section> tag](https://www.w3schools.com/TAgs/tag_section.asp) with a definedable header:
-- .
-- Header.
+- The header level will automatically be assigned by how many chapter tag is the current one in plus one.
+- If there is a chapter tag inside more than 5 chapter tags, it's will be header level will alway be 6.
+- Header can include any inline elements like [tags](#11--syntax), [autolinks](#-21-autolinks), [code spans](#-22-codes)...
 
 Examples:
 
