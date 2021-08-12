@@ -3,25 +3,34 @@
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/282/tangerine_1f34a.png"></p>
 <p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=F49104&color=F49104&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23F49104.svg?labelColor=F49104&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
 
+`#TODO` https://www.pml-lang.dev/docs/reference_manual/index.html#node_insert_code
+
 ## 💡 About
 
-<pre><code class="language-orml">Orange markup language is a extremely "original" markup language.
-It's use <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> as it's core, design to replace both <a href="https://github.github.com/gfm">Markdown</a> and <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
+<pre><code class="language-orml">Orange markup language is a extremely "original" markup language,
+design to replace both <a href="https://github.github.com/gfm">Markdown</a> and <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
 
 [="📔 Story"
-  After looking for some alternative to <a href="https://github.github.com/gfm">Markdown</a>,
-  I discover <a href="https://www.pml-lang.dev">PML (Practical Markup Language)</a>
-  and IMO it's the best designed markup language so far.
+  After looking for some alternative to <a href="https://github.github.com/gfm">Markdown</a>, I discover <a href="https://www.pml-lang.dev">PML</a>
+  (Practical Markup Language) and IMO it's the best designed markup
+  language so far.
 
-  But I found it's a bit waste opportunity to have such
-  a beautiful syntax that can directly harvest the raw power
-  of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> but chose not to do so.
+  But I found it's a bit waste opportunity to have such a beautiful syntax
+  that can directly harvest the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> but chose not to do so.
+  And although PML's way of doing <a href="https://www.pml-lang.dev/docs/reference_manual/index.html#node_list">list</a> and <a href="https://www.pml-lang.dev/docs/reference_manual/index.html#node_table">table</a> is more consistent
+  to it's syntax, I just miss the simple Markdown way.
+
+  This motivates me to create a new markup language but with a different
+  approac: by using HTML as the core, 
 ]
 
 [="✨ Features"
-  - Beautiful syntax inspired by <a href="https://www.pml-lang.dev">PML</a>.
-  - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
-  - Easy to read and write as <a href="https://github.github.com/gfm">Markdown</a>.
+  - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> plus:
+    - Beautiful syntax inspired by <a href="https://www.pml-lang.dev">PML</a>.
+  - Come with many <a href="https://github.github.com/gfm">Markdown</a>'s convenient features:
+    - <a href="#-22-codes">Code spans</a>.
+    - <a href="#-23-lists">Simple lists</a>.
+    - <a href="#%EF%B8%8F-24-tables">Simple tables</a>.
 ]</code></pre>
 
 Here are some comparison:
