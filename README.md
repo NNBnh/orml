@@ -122,48 +122,61 @@ To make ORML more readable, the following HTML tags have aliases (and it's the p
 
 #### 📚 1.4. Chapter tags
 
-`#TODO`:
-[Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch)
+Tag: `[="HEADER" ...]`
 
-`[="HEADER" ...]`
+Inspired by [PML's Chapter node](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch).
+
+Examples:
 
 ```orml
-[="Title"
-  [="About"
+[section
+  [h1 Title]
+  [section
+    [h2 [_ About]]
     Some introduction...
   ]
 
-  [="Tutorial"
+  [section
+    [h2 Tutorial]
     How to...
 
-    [="Reference"
+    [section
+      [h3 The `print()` command]
       Information...
     ]
   ]
 ]
 ```
 
-```html
-<section>
-    <h1>Title</h1>
-    <section>
-        <h2>About</h2>
-        <p>Some introduction...</p>
-    </section>
-    <section>
-        <h2>Tutorial</h2>
-        <p>How to...</p>
-        <section>
-            <h3>Reference</h3>
-            <p>Information...</p>
-        </section>
-    </section>
-</section>
+Can be better write as:
+
+```orml
+[="Title"
+  [="[_ About]"
+    Some introduction...
+  ]
+
+  [="Tutorial"
+    How to...
+
+    [="The `print()` command"
+      Information...
+    ]
+  ]
+]
 ```
 
 <table><body><tr><td>
 
-# TEST
+# Title
+## _About_
+Some introduction...
+
+## Tutorial
+How to...
+
+### The `print()` command
+Information...
 
 </td></tr></body></table>
 
