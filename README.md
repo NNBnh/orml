@@ -25,7 +25,7 @@ Hello, World!
 
 ### ✨ Features
 - Beautiful syntax inspired by [PML](https://www.pml-lang.dev)
-- With the power of [HTML](https://en.wikipedia.org/wiki/HTML5)
+- With the raw power of [HTML](https://en.wikipedia.org/wiki/HTML5)
 - Easy to read and write as [Markdown](https://github.github.com/gfm)
 
 <br>
@@ -46,7 +46,7 @@ Hello, World!
 
 This document attempts to specify Orange markup language syntax.
 
-> *Orange markup language will often be referred to as ORML in this document.
+> *Orange markup language will often be referred to as ORML in this document.*
 
 ### 📜 1. HTML power
 
@@ -126,6 +126,46 @@ To make ORML more readable, the following HTML tags have aliases (and it's the p
 [Chapter](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch)
 
 `[="HEADER" ...]`
+
+```orml
+[="Title"
+  [="About"
+    Some introduction...
+  ]
+
+  [="Tutorial"
+    How to...
+
+    [="Reference"
+      Information...
+    ]
+  ]
+]
+```
+
+```html
+<section>
+    <h1>Title</h1>
+    <section>
+        <h2>About</h2>
+        <p>Some introduction...</p>
+    </section>
+    <section>
+        <h2>Tutorial</h2>
+        <p>How to...</p>
+        <section>
+            <h3>Reference</h3>
+            <p>Information...</p>
+        </section>
+    </section>
+</section>
+```
+
+<table><body><tr><td>
+
+# TEST
+
+</td></tr></body></table>
 
 <br>
 
