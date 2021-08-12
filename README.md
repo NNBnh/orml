@@ -5,29 +5,29 @@
 
 ## 💡 About
 
-<pre><code class="language-orml">Orange markup language is a extremely "original" markup language,
-design to replace both <a href="https://github.github.com/gfm">Markdown</a> and <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a>.
+<pre><code class="language-orml">[cite <b><i>Orange markup language</i></b>] is an "original" markup language,
+design to replace both <a href="https://github.github.com/gfm">Markdown</a> and <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a>.
 
-[="📔 Story"
+[="<b>📔 Story</b>"
   After looking for some alternative to <a href="https://github.github.com/gfm">Markdown</a>, I discover <a href="https://www.pml-lang.dev">PML</a>
-  (Practical Markup Language) and IMO it's the best designed markup
+  (Practical Markup Language) and [_ <em>IMO</em>] it's the best designed markup
   language so far.
 
   But I found it's a bit waste opportunity to have such a beautiful syntax
-  that can directly harvest the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> but chose not to do so.
+  that can directly harvest the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> but chose not to do so.
   And although PML's way of doing <a href="https://www.pml-lang.dev/docs/reference_manual/index.html#node_list">list</a> and <a href="https://www.pml-lang.dev/docs/reference_manual/index.html#node_table">table</a> is more consistent
   to it's syntax, I just miss the simple Markdown way.
 
   This motivates me to create a new markup language but with a different
-  approac: by using HTML as the core, change the syntax to PML, add some
-  features from Markdown, and we have Orange markup language!
+  approac: by using HTML5 as the core, change the syntax to PML, add some
+  features from Markdown, and we have [* <b>Orange markup language!</b>]
 ]
 
-[="✨ Features"
-  - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML</a> plus:
+[="<b>✨ Features</b>"
+  - With the raw power of <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> plus:
     - <a href="#-11-syntax">Beautiful syntax</a> inspired by <a href="https://www.pml-lang.dev">PML</a>.
     - <a href="#%EF%B8%8F-13-alias-tags">Tag's aliases</a>.
-    - Can be integrated with web framework (WIP).
+    - Can be integrated with web frameworks (WIP).
   - Come with many <a href="https://github.github.com/gfm">Markdown</a>'s convenient features:
     - <a href="#-22-codes">Code spans</a>.
     - <a href="#-23-lists">Simple lists</a>.
@@ -69,7 +69,7 @@ This document attempts to specify Orange markup language syntax.
 
 ### 📜 1. HTML power
 
-ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets of HTML will be applied to ORML but with changes declared below.
+ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets (even [`&` character reference](https://www.w3schools.com/charsets/ref_html_symbols.asp)) of HTML will be applied to ORML but with changes declared below.
 
 ####  📏 1.1. Syntax
 
