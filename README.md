@@ -124,7 +124,10 @@ To make ORML more readable, the following HTML tags have aliases (and it's the p
 
 Tag: `[="HEADER" ...]`
 
-Inspired by [PML's Chapter node](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch).
+Inspired by [PML's Chapter node](https://www.pml-lang.dev/docs/reference_manual/index.html#node_ch),
+chapter tag is an alias for the [HTML's <section> tag](https://www.w3schools.com/TAgs/tag_section.asp) with a definedable header:
+- .
+- Header.
 
 Examples:
 
