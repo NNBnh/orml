@@ -30,8 +30,8 @@ design to replace both <a href="https://github.github.com/gfm">Markdown</a> and 
     - Can be integrated with web frameworks (WIP).
   - Come with many <a href="https://github.github.com/gfm">Markdown</a>'s convenient features:
     - <a href="#-22-codes">Code spans</a>.
-    - <a href="#-23-lists">Simple lists</a>.
-    - <a href="#%EF%B8%8F-24-tables">Simple tables</a>.
+    - <a href="#-23-simple-lists">Simple lists</a>.
+    - <a href="#%EF%B8%8F-24-simple-tables">Simple tables</a>.
 ]</code></pre>
 
 Here are some comparison:
@@ -266,7 +266,7 @@ while True:
 
 </td></tr></body></table>
 
-#### 📝 2.3. Lists
+#### 📝 2.3. Simple Lists
 
 ORML support [list items](https://github.github.com/gfm/#list-items)
 and [lists](https://github.github.com/gfm/#lists) from [GFM](https://github.github.com/gfm) but with the following difference:
@@ -301,11 +301,14 @@ Ordered list items:
 
 </td></tr></body></table>
 
-#### 🗄️ 2.4. Tables
+#### 🗄️ 2.4. Simple tables
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
+- A [table](https://github.github.com/gfm/#table) is an arrangement of data with rows and columns, consisting of at least one data rows, some header rows or/and footer rows (both are optional) separate by a delimiter row.
 - The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing equals sign `=` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
-- Footer. `#TODO`
+  - If there is no delimiter row in the table, all rows are data.
+  - If there is one delimiter row in the table, all rows above the delimiter row are header, the rest are data.
+  - If there is two or more delimiter row in the table, all rows above the first delimiter row are header, all rows below the last delimiter row are footer, the rest are data.
 
 #### 🔣 2.5. Backslash escapes
 
