@@ -49,6 +49,8 @@ Here are some comparison:
 
 <br>
 
+<!--
+
 ## 🚀 Setup
 
 ### 🧾 Dependencies
@@ -56,6 +58,8 @@ Here are some comparison:
 ### 📥 Installation
 
 <br>
+
+-->
 
 ## ⌨️ Usage
 
