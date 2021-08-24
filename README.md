@@ -1,7 +1,7 @@
 <h1 align="center">Orange markup language</h1>
 <p align="center">A simple and powerful markup language</p>
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/282/tangerine_1f34a.png"></p>
-<p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=F49104&color=F49104&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23F49104.svg?labelColor=F49104&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
+<p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=585858&color=FF9470&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23FF9470.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
 
 ## 💡 About
 
