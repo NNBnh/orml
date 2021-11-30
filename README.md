@@ -86,14 +86,14 @@ ORML is basically HTML5 under the hood. So every syntaxes, elements and rulesets
 > ```html
 > <tagname>
 > <tagname>content</tagname>
-> <tagname attribute="value" more-attribute="value">
+> <tagname attribute="value" more-attribute="value"></tagname>
 > <tagname attribute="value" more-attribute="value">content</tagname>
 > ```
 
 An ORML element is defined by a tag with some context inside it:
-- A tag open with a `[` character follow by the tag name and optionally with some attributes and/or some context, then end with a `]` character.
-- An attribute start with the attribute name follow by a `=` character then some value wrapped by `"`/`'` characters or by a curly brackets (`{`, `}`).
-- The tag's context must be at the end of the tag (right before the `]` character). If the context look like an attribute, you need to escape the `=` character <!-- (escape `{` or/and `}` if it look like a dynamic attribute) -->.
+- A tag open with a `[` character follow by the tag name and optionally with some attributes then/or some context, and end with a `]` character.
+- An attribute start with the attribute name follow by a `=` character then some value wrapped by `"`/`'` characters<!-- or by a curly brackets (`{`, `}`)-->.
+- If a tag content any attribute, the attributes must be separate from the context by a vertical bar `|`.
 <!-- - An attribute can be [Svelte's dynamic attribute](https://svelte.dev/tutorial/dynamic-attributes) which start and end with an open and close curly brackets (`{`, `}`). -->
 
 Examples:
@@ -102,7 +102,7 @@ Examples:
 [tagname]
 [tagname content]
 [tagname attribute="value" more-attribute="value"]
-[tagname attribute="value" more-attribute="value" content]
+[tagname attribute="value" more-attribute="value" | content]
 ```
 
 #### 🔥 1.2. Replaced/Removed tags
@@ -193,6 +193,8 @@ Can be better write as:
 ]
 ```
 
+<!--
+
 <table><body><tr><td>
 
 # Title
@@ -206,6 +208,8 @@ How to...
 Information...
 
 </td></tr></body></table>
+
+-->
 
 <br>
 
@@ -309,7 +313,7 @@ Ordered list items:
 
 ORML support [tables](https://github.github.com/gfm/#tables-extension-) from [GFM](https://github.github.com/gfm) but with the following difference:
 - A [table](https://github.github.com/gfm/#table) is an arrangement of data with rows and columns, consisting of at least one data rows, some header rows or/and footer rows (both are optional) separate by a delimiter row.
-- The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing equals sign `=` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
+- The [delimiter row](https://github.github.com/gfm/#delimiter-row) consists of cells whose only content are hyphens `-`, and optionally, a leading or trailing period `.` (and not colon `:`), or both, to indicate left, right, or center alignment respectively.
   - If there is no delimiter row in the table, all rows are data.
   - If there is one delimiter row in the table, all rows above the delimiter row are header, the rest are data.
   - If there is two or more delimiter row in the table, all rows above the first delimiter row are header, all rows below the last delimiter row are footer, the rest are data.
@@ -322,23 +326,21 @@ Except inside [code spans or fenced code blocks](#-22-codes), any punctuation or
 | -------- | -------- | --------------------- |
 | `\\`     | `\`      | Backslash             |
 | `\&`     | `&`      | Ampersand             |
-|          |          |                       |
+| ​        |          |                       |
 | `\[`     | `[`      | Left square brackets  |
 | `\]`     | `]`      | Right square brackets |
-| `\=`     | `=`      | Equals sign           |
 | `\'`     | `'`      | Apostrophe            |
 | `\"`     | `"`      | Quotation marks       |
-| `\{`     | `{`      | Left curly brackets   |
-| `\}`     | `}`      | Right curly brackets  |
-|          |          |                       |
+| ​        |          |                       |
 | `` \` `` | `` ` ``  | Grave accent          |
-|          |          |                       |
+| ​        |          |                       |
 | `\-`     | `-`      | Hyphen/minus          |
 | `\.`     | `.`      | Period                |
-|          |          |                       |
+| ​        |          |                       |
 | `\\|`    | `\|`     | Vertical bar          |
-| `\-`     | `-`      | Hyphen/minus          |
-| `\=`     | `=`      | Equals sign           |
+<!--| ​        |          |                       |-->
+<!--| `\{`     | `{`      | Left curly brackets   |-->
+<!--| `\}`     | `}`      | Right curly brackets  |-->
 
 <br>
 
