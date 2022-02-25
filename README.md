@@ -1,7 +1,7 @@
 <h1 align="center">Orange markup language</h1>
 <p align="center">A simple and powerful markup language</p>
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/282/tangerine_1f34a.png"></p>
-<p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=585858&color=FF9470&style=for-the-badge" alt="License: GPL-3.0"></a> <!-- <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23FF9470.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a> --></p>
+<p align="center"><a href="https://github.com/NNBnh/orml/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/orml?labelColor=585858&color=FF9470&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-abandoned"><img src="https://img.shields.io/badge/development-abandoned-%23FF9470.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development abandoned"></a></p>
 
 ## 💡 About
 
@@ -46,6 +46,12 @@ Here are some comparison:
 | `<sub>...</sub>`       | `~...~`                | `<sub>...</sub>`   | `[, ...]` | <sub>subscripted</sub>   |
 | `<sup>...</sup>`       | `^...^`                | `<sup>...</sup>`   | `[^ ...]` | <sup>superscripted</sup> |
 | `` `...` ``            | `` `...` ``            | `<pre>...</pre>`   | `[$ ...]` | `Monospace`              |
+
+### 🚫 Development abandoned
+
+After a while I start to realize that maybe we don't need another markdown language anymore:
+- For developer, HTML is the best choice because HTML's tags syntax is very clear compared to ORML.
+- For causal writing usage, Markdown and AsciiDoc is good enough (even more prefer than ORML).
 
 <br>
 
